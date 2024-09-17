@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020631;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.mainHeading {
+  margin-bottom: 20px;
+}
+
+.mainHeading h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.subHeading {
+  color: white;
+  
+}
+.space{
+  margin-top: 15px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.input input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #282c34;
+  margin-right: 10px;
+}
+
+.input i {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+}
+
+.todos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.todos-section {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.todos-section h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.todo {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo .left {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Allow left section to take up remaining space */
+}
+
+.todo .left input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.todo .left p {
+  font-size: 1em;
+  color: #333;
+}
+
+.todo .right {
+  cursor: pointer;
+  color: #d11a2a;
+  margin-left: 20px; /* Space between timestamps and remove button */
+}
+
+.timestamps {
+  font-size: 0.8em;
+  color: #777;
+  text-align: right; /* Align text to the right */
+}
+
+.tasks-table {
+  margin-top: 40px;
+}
+
+.tasks-table h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.tasks-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasks-table th, .tasks-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tasks-table th {
+  background-color: #282c34;
+  color: white;
+}
+
+.tasks-table td {
+  background-color: white;
+  color: #333;
+  text-align: center;
+}
+
+.remove {
+  cursor: pointer;
+  font-size: 1.2em;
+}/* Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #020631;
+}
+
+.login-box {
+  background-color: #282c34;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 450px;
+}
+
+.login-box h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #020631;
+  background-color: #fff;
+  color: #333;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #5a329d;
+}
+
+.error-message {
+  color: #d11a2a;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.toggle-button {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+.toggle-button:hover {
+  background-color: #3a3f47;
+}/* General Layout */
+.app {
+  padding: 20px;
+}
+
+/* Main heading with user info */
+.mainHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  font-size:small;
+}
+
+.user-info {
+  position: relative;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nil-text {
+  color: grey;
+  text-align: center;
+  margin: 30px 0;
+}
+.user-button {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.user-button:hover {
+  background-color: #3a3f47;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logout-button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.logout-button:hover {
+  background-color: rgba(115, 115, 115, 0.83);
+  color: #ddd;
+
+}
+
+/* Todos Layout */
+.todos-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.todos-section {
+  width: 48%;
+  height: fit-content;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .todos-container {
+    flex-direction: column;
+  }
+
+  .todos-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Task Table */
+.tasks-table {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.tasks-table table {
+  width: 100%;
+  border-collapse: collapse;
+  justify-content: center;
+}
+
+.tasks-table table, th, td {
+  border: 1px solid #ddd;
+}
+
+.tasks-table th, td {
+  padding: 8px;
+  text-align: center;
+}.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #020631;
+}
+
+.signup-box {
+  background-color: #282c34;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 450px;
+}
+
+.signup-box h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #020631;
+  background-color: #fff;
+  color: #333;
+}
+
+.sign-up-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.sign-up-button:hover {
+  background-color: #5a329d;
+}
+
+.error-message {
+  color: #d11a2a;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.toggle-button {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+.toggle-button:hover {
+  background-color: #3a3f47;
+}
+
+
+
+
