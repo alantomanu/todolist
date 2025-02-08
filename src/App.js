@@ -115,7 +115,10 @@ function App() {
       </div>
       <div className="subHeading">
         <br />
-        <h2>Whoop, it's {new Date().toDateString()} 🌝 ☕</h2>
+        <h1>
+          {currentUser ? `Welcome, ${currentUser.displayName.charAt(0).toUpperCase() + currentUser.displayName.slice(1) || currentUser.email}! 🎉` : 'Yay, it\'s'}
+        </h1>
+        <h3>{new Date().toDateString()} ☕</h3>
         <h3 className="space">Current Time: {currentTime}</h3>
       </div>
       <div className="input">
